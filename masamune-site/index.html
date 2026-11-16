@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Masamune-kun's Revenge</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #12101a; color: #fff; line-height: 1.6; }
+
+  /* Opening screen: title and intro centred in the middle of the page */
+  .intro { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2rem; background: linear-gradient(160deg, #3a0f2e, #12101a 75%); }
+  .intro h1 { font-size: clamp(2.4rem, 8vw, 4.8rem); line-height: 1.1; color: #ff4f87; }
+  .intro p { max-width: 640px; margin-top: 1.5rem; font-size: 1.2rem; color: #ddd; }
+  .intro .hint { margin-top: 3rem; color: #ff4f87; letter-spacing: 2px; font-size: .9rem; animation: bob 1.6s infinite; }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+
+  /* One screen per character: image on one side, name and story on the other */
+  .character { min-height: 100vh; display: flex; align-items: center; justify-content: center; gap: 3rem; padding: 3rem 2rem; max-width: 1100px; margin: 0 auto; }
+  .character:nth-of-type(even) { flex-direction: row-reverse; }
+  .character img { width: 340px; height: 460px; object-fit: cover; border-radius: 16px; background: #2a2540; box-shadow: 0 8px 30px rgba(0,0,0,.5); flex-shrink: 0; }
+  .character .info { max-width: 520px; }
+  .tag { display: inline-block; background: #ff4f87; font-size: .8rem; letter-spacing: 2px; padding: .25rem .8rem; border-radius: 20px; margin-bottom: .8rem; }
+  .character h2 { font-size: clamp(2rem, 5vw, 3rem); margin-bottom: .6rem; }
+  .character p { font-size: 1.1rem; color: #e2e2e2; }
+
+  /* Closing explanation, centred like the opening */
+  .ending { min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 3rem 2rem; background: linear-gradient(200deg, #3a0f2e, #12101a 75%); }
+  .ending h2 { font-size: clamp(2rem, 6vw, 3rem); color: #ff4f87; margin-bottom: 1rem; }
+  .ending p { max-width: 680px; font-size: 1.15rem; color: #ddd; }
+
+  footer { text-align: center; padding: 1.5rem; color: #777; font-size: .85rem; }
+
+  @media (max-width: 760px) {
+    .character, .character:nth-of-type(even) { flex-direction: column; text-align: center; gap: 1.5rem; }
+    .character img { width: 100%; max-width: 340px; height: 420px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Opening: title + short explanation, centred -->
+<section class="intro">
+  <h1>Masamune-kun's Revenge</h1>
+  <p>Once a chubby boy who was cruelly rejected by the girl he loved, Masamune Makabe spent years transforming himself. Now he's back with one goal: make her fall for him, then break her heart. But revenge is never that simple. Scroll down to meet the people in his story.</p>
+  <div class="hint">SCROLL ↓</div>
+</section>
+
+<!-- Masamune -->
+<section class="character">
+  <img src="images/masamune.jpg" alt="Masamune Makabe">
+  <div class="info">
+    <span class="tag">THE PROTAGONIST</span>
+    <h2>Masamune Makabe</h2>
+    <p>Rejected and insulted as a child, Masamune dedicated himself to studying, working out and polishing his looks. He transfers to Aki's school as the perfect guy and sets his revenge plan in motion, but it keeps tangling with his own feelings.</p>
+  </div>
+</section>
+
+<!-- Aki -->
+<section class="character">
+  <img src="images/aki.jpg" alt="Aki Adagaki">
+  <div class="info">
+    <span class="tag">THE GIRL WHO REJECTED HIM</span>
+    <h2>Aki Adagaki</h2>
+    <p>Known as the Cruel Princess, Aki is beautiful, top of her class and famously cold to boys. She doesn't recognise Masamune at first, and as he gets closer, her tough image starts to crack and a softer side shows.</p>
+  </div>
+</section>
+
+<!-- Yoshino -->
+<section class="character">
+  <img src="images/yoshino.jpg" alt="Yoshino Koiwai">
+  <div class="info">
+    <span class="tag">THE KIND CLASSMATE</span>
+    <h2>Yoshino Koiwai</h2>
+    <p>Gentle and warm, Yoshino befriends Masamune and becomes an important part of his life, bringing a very different kind of relationship into the story.</p>
+  </div>
+</section>
+
+<!-- Neko -->
+<section class="character">
+  <img src="images/neko.jpg" alt="Neko">
+  <div class="info">
+    <span class="tag">THE MAID</span>
+    <h2>Neko</h2>
+    <p>Aki's devoted maid. She keeps a close eye on everything that happens around her mistress and has her own hidden connection to Masamune's past.</p>
+  </div>
+</section>
+
+<!-- Ending: what happened -->
+<section class="ending">
+  <h2>What Happened</h2>
+  <p>Years ago, Masamune Makabe confessed to Aki Adagaki and was shot down with a cruel nickname that stuck with him. He swore revenge. He trained, studied and rebuilt himself into the school's perfect guy, then transferred to her school with a plan: make her fall in love with him, then reject her the same way she rejected him. At first it works. Aki, who treats most boys with ice, slowly warms up to him, and Masamune gets closer to her than he ever expected. But the more time they spend together, the more he sees the real Aki behind the Cruel Princess act, and the harder it gets to stay cold. Along the way, Yoshino's kindness and Neko's quiet watching add feelings, secrets and complications he never planned for. Hidden pasts come out, Aki's own side of that old rejection starts to matter, and Masamune has to face a question he never wanted to ask: is he still chasing revenge, or has he fallen for the girl he's trying to hurt?</p>
+</section>
+
+<footer>Fan-made page. All characters belong to their original creators.</footer>
+
+</body>
+</html>
