@@ -3,495 +3,202 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Masamune-kun's Revenge | Fan Page</title>
-<meta name="description" content="An unofficial fan page for the anime Masamune-kun's Revenge: premise, seasons, facts and more.">
-<meta name="theme-color" content="#fff5f3">
+<title>My Anime | Fan Page</title>
+<meta name="description" content="Anime I've watched and loved. Click one to open its own page with the story, characters and scenes.">
 <style>
-  :root {
-    --bg: #fff7f5;
-    --bg2: #ffeaf0;
-    --card: #ffffff;
-    --line: #f2d3da;
-    --text: #3a1f2b;
-    --muted: #7d5d6b;
-    --accent: #c8264f;
-    --accent-soft: #e8588a;
-    --gold: #a8680c;
-    --shadow: 0 10px 30px rgba(200, 38, 79, .09);
-    --radius: 16px;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; scroll-padding-top: 76px; }
-  body {
-    background:
-      radial-gradient(1100px 560px at 90% -8%, #ffd6e1 0%, transparent 60%),
-      radial-gradient(900px 520px at -10% 30%, #ffe6cf 0%, transparent 55%),
-      var(--bg);
-    color: var(--text);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    line-height: 1.65;
-    -webkit-font-smoothing: antialiased;
-  }
-  body::before {
-    content: "";
-    position: fixed; inset: 0; z-index: -1; pointer-events: none;
-    background-image:
-      radial-gradient(4px 3px at 30px 40px, #f4a3b866, transparent),
-      radial-gradient(3px 2px at 110px 130px, #f4a3b855, transparent),
-      radial-gradient(4px 3px at 190px 70px, #e8588a44, transparent),
-      radial-gradient(3px 2px at 260px 190px, #f4a3b855, transparent),
-      radial-gradient(4px 3px at 330px 100px, #f4a3b866, transparent);
-    background-size: 380px 240px;
-  }
-  h1, h2, h3 { font-family: Georgia, "Times New Roman", serif; line-height: 1.2; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  :focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 3px; border-radius: 6px; }
-  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 22px; }
-  .skip { position: absolute; left: -999px; top: 8px; background: var(--accent); color: #fff; padding: 8px 14px; border-radius: 8px; z-index: 50; }
-  .skip:focus { left: 12px; }
+:root{--bg:#0f1020;--bg2:#1a1b3a;--card:#17183a;--line:#2e3068;--text:#eceaff;--muted:#a9a8d4;--accent:#8c8cf0;--gold:#f2c46b;--shadow:0 12px 34px rgba(0,0,0,.35)}
+@media(prefers-color-scheme:light){:root{--bg:#f6f5ff;--bg2:#e6e5ff;--card:#fff;--line:#d3d2f3;--text:#1f1f45;--muted:#5d5d8f;--accent:#4a4ac0;--gold:#9a6408;--shadow:0 10px 28px rgba(74,74,192,.12)}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:radial-gradient(900px 520px at 85% -5%,var(--bg2),transparent 60%),var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:4px 16px;align-items:center;flex-wrap:wrap;min-height:56px;font-size:.88rem}
+nav b{font-family:Georgia,serif;margin-right:auto;font-size:1.05rem}
+.hero{text-align:center;padding:70px 0 30px}
+.kicker{font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.hero h1{font-size:clamp(2rem,6vw,3.3rem);margin:10px 0}
+.hero p{color:var(--muted);max-width:560px;margin:0 auto 22px}
+.picks{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:10px 0 20px}
+.pick{display:block;border:1px solid var(--line);border-top:4px solid var(--c);border-radius:14px;background:var(--card);padding:12px 14px;color:var(--text);text-align:left}
+.pick:hover{text-decoration:none;transform:translateY(-2px)}
+.pick b{font:700 1.5rem Georgia,serif;color:var(--c)}.pick span{display:block;font-size:.88rem;line-height:1.3}
+.show{padding:44px 0;border-top:1px solid var(--line)}
+.banner{position:relative;border-radius:20px;overflow:hidden;min-height:230px;background:linear-gradient(135deg,var(--c),var(--bg2));display:flex;align-items:flex-end;box-shadow:var(--shadow)}
+.banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.banner .ov{position:relative;padding:60px 24px 22px;width:100%;background:linear-gradient(transparent,rgba(8,8,24,.88));color:#fff}
+.banner h2{font-size:clamp(1.5rem,4.5vw,2.4rem)}
+.banner .rk{font:700 .85rem system-ui;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.banner .jp{opacity:.85;font-size:.9rem}
+.cols{display:grid;grid-template-columns:1.5fr 1fr;gap:22px;margin:22px 0}
+@media(max-width:720px){.cols{grid-template-columns:1fr}}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.box h3{font-size:1.05rem;margin-bottom:8px}
+.box p+p{margin-top:10px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.tags span{font-size:.78rem;font-weight:600;padding:3px 11px;border-radius:999px;background:color-mix(in srgb,var(--c) 20%,transparent)}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-size:.92rem}dt{color:var(--muted)}dd{font-weight:600}
+.take{margin-top:16px;padding:12px 16px;border-left:3px solid var(--c);background:color-mix(in srgb,var(--c) 10%,transparent);border-radius:0 12px 12px 0}
+.take b{display:block;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sub{font-size:1.15rem;margin:26px 0 12px}
+.chars{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.ch{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.ch .ph{aspect-ratio:3/4}
+.ch div.t{padding:10px 12px;font-size:.9rem;line-height:1.35}.ch small{display:block;color:var(--muted)}
+.shots{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.shots .ph{aspect-ratio:16/9;border-radius:12px;border:1px solid var(--line)}
+.ph{position:relative;overflow:hidden;background:linear-gradient(135deg,color-mix(in srgb,var(--c) 40%,var(--card)),var(--card));cursor:zoom-in}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.ph.missing{cursor:default;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px}
+.ph.missing img{display:none}
+.ph.missing::after{content:attr(data-path);font:.7rem monospace;color:var(--muted);word-break:break-all}
+.quote{font:italic 1.25rem Georgia,serif;color:var(--gold);text-align:center;margin-top:28px}
+dialog{border:0;background:transparent;max-width:94vw;max-height:94vh;margin:auto}dialog::backdrop{background:rgba(0,0,0,.85)}
+dialog img{max-width:94vw;max-height:90vh;border-radius:12px;display:block}
+footer{border-top:1px solid var(--line);padding:28px 0 40px;color:var(--muted);font-size:.85rem;text-align:center}
+.reveal{opacity:0;transform:translateY(14px);transition:.6s}.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}.pick:hover{transform:none}}
+.tabs{display:flex;gap:6px}
+.tabs button{font:600 .88rem system-ui;color:var(--muted);background:none;border:1px solid var(--line);border-radius:999px;padding:7px 16px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--accent);border-color:var(--accent);color:#fff}
+.intro{color:var(--muted);margin:36px 0 18px}
+details.wl{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--c);border-radius:14px;margin-bottom:12px;padding:0 18px}
+details.wl summary{cursor:pointer;list-style:none;padding:16px 0;display:flex;flex-wrap:wrap;gap:2px 14px;align-items:baseline}
+details.wl summary::-webkit-details-marker{display:none}
+details.wl summary b{font:700 1.15rem Georgia,serif}details.wl summary span{color:var(--muted);font-size:.85rem}
+details.wl summary::after{content:"＋";margin-left:auto;color:var(--c)}details.wl[open] summary::after{content:"－"}
+details.wl .show{border-top:1px solid var(--line);padding:24px 0}
+/* hub tiles */
+.grid-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin:10px 0 50px}
+.tile{display:block;background:var(--card);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:18px;overflow:hidden;color:var(--text);transition:transform .2s,box-shadow .2s}
+.tile:hover{text-decoration:none;transform:translateY(-4px);box-shadow:var(--shadow)}
+.tile .cv{aspect-ratio:16/10;background:linear-gradient(135deg,var(--c),var(--bg2));position:relative}
+.tile .cv img{width:100%;height:100%;object-fit:cover;display:block}
+.tile .tb{padding:14px 16px 18px}
+.tile .rk{font:700 .74rem system-ui;letter-spacing:.12em;text-transform:uppercase;color:var(--c)}
+.tile h3{font-size:1.1rem;margin:4px 0}
+.tile p{color:var(--muted);font-size:.9rem;line-height:1.45}
+.tile .go{display:inline-block;margin-top:10px;font-weight:700;font-size:.85rem;color:var(--accent)}
+.back{font-weight:600;font-size:.9rem}
+.pager{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:26px 0 10px;border-top:1px solid var(--line)}
+.pager a{border:1px solid var(--line);border-radius:999px;padding:8px 16px;background:var(--card);font-weight:600;font-size:.9rem}
+.missingmsg{padding:80px 0;text-align:center}
+.banner h1{font-size:clamp(1.5rem,4.5vw,2.4rem)}
 
-  /* nav */
-  nav { position: sticky; top: 0; z-index: 20; background: #fff7f5e6; backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }
-  nav .wrap { display: flex; justify-content: space-between; align-items: center; min-height: 60px; gap: 16px; }
-  .brand { font-family: Georgia, serif; font-weight: 700; color: var(--text); display: flex; align-items: center; gap: 10px; }
-  .brand i { width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-soft)); display: inline-block; }
-  .brand:hover { text-decoration: none; }
-  nav ul { display: flex; gap: 4px; list-style: none; overflow-x: auto; scrollbar-width: none; }
-  nav ul::-webkit-scrollbar { display: none; }
-  nav ul a { color: var(--muted); font-size: .9rem; padding: 7px 12px; border-radius: 99px; white-space: nowrap; display: block; }
-  nav ul a:hover { color: var(--text); background: var(--bg2); text-decoration: none; }
-  nav ul a.active { color: var(--accent); background: var(--bg2); font-weight: 600; }
-
-  /* hero */
-  .hero { padding: 84px 0 40px; text-align: center; }
-  .pill { display: inline-block; font-size: .82rem; color: var(--gold); background: #a8680c14; border: 1px solid #a8680c33; padding: 5px 16px; border-radius: 99px; }
-  .jp { font-size: 1.1rem; color: var(--accent-soft); letter-spacing: 6px; margin-top: 22px; }
-  h1 { font-size: clamp(2.4rem, 8vw, 4.8rem); margin: 8px 0 18px; letter-spacing: -.5px; }
-  h1 span { background: linear-gradient(90deg, #c8264f, #ee6f8f); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .lead { color: var(--muted); font-size: 1.15rem; max-width: 640px; margin: 0 auto; }
-  .cta { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
-  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 12px; font-weight: 600; font-size: .95rem; border: 1px solid var(--line); background: var(--card); color: var(--text); cursor: pointer; font-family: inherit; transition: transform .15s, box-shadow .15s; }
-  .btn:hover { text-decoration: none; transform: translateY(-2px); box-shadow: var(--shadow); }
-  .btn.primary { background: linear-gradient(90deg, #c8264f, #e8588a); border: 0; color: #fff; box-shadow: 0 6px 18px #c8264f33; }
-  .hero-stats { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
-  .hs { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 26px; min-width: 150px; }
-  .hs b { display: block; font-family: Georgia, serif; font-size: 1.8rem; color: var(--accent); line-height: 1.1; }
-  .hs span { font-size: .85rem; color: var(--muted); }
-
-  /* sections */
-  section { padding: 66px 0 14px; }
-  .head { margin-bottom: 28px; }
-  .kicker { color: var(--gold); font-size: .8rem; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; }
-  h2 { font-size: clamp(1.7rem, 4vw, 2.3rem); margin: 6px 0 8px; }
-  h2::after { content: ""; display: block; width: 54px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, var(--accent), var(--accent-soft)); margin-top: 12px; }
-  .sub { color: var(--muted); max-width: 640px; }
-
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); }
-  .grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
-  .card h3 { font-size: 1.15rem; margin-bottom: 8px; }
-  .card p { color: var(--muted); font-size: .96rem; }
-  .chips { display: flex; flex-wrap: wrap; gap: 9px; }
-  .chip { padding: 6px 14px; border: 1px solid var(--line); border-radius: 99px; background: var(--card); font-size: .88rem; }
-  .chip.hot { background: var(--bg2); border-color: #f4a3b8; color: var(--accent); font-weight: 600; }
-  .note { margin-top: 16px; font-size: .88rem; color: var(--muted); font-style: italic; }
-
-  /* premise */
-  .premise { display: grid; grid-template-columns: 1.2fr 1fr; gap: 26px; align-items: start; }
-  .premise p { color: var(--muted); font-size: 1.05rem; margin-bottom: 14px; }
-  .premise p:first-child { color: var(--text); font-size: 1.15rem; }
-
-  /* revenge plan */
-  .plan { display: grid; gap: 14px; counter-reset: s; }
-  .pstep { display: flex; gap: 14px; align-items: flex-start; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; counter-increment: s; transition: transform .2s, box-shadow .2s, border-color .2s; }
-  .pstep::before { content: counter(s); flex: 0 0 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(135deg, #c8264f, #ee6f8f); color: #fff; font-weight: 700; font-family: Georgia, serif; }
-  .pstep b { display: block; font-size: .98rem; }
-  .pstep span { color: var(--muted); font-size: .88rem; }
-  .pstep:hover { transform: translateX(6px); box-shadow: var(--shadow); border-color: #f4a3b8; }
-  .plan-title { font-size: .8rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); font-weight: 700; margin-bottom: 12px; }
-
-  /* facts */
-  .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
-  .fact { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 12px; padding: 14px 18px; }
-  .fact b { display: block; font-size: .74rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); }
-  .fact span { font-weight: 600; }
-
-  /* tabs */
-  .tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
-  .tab { border: 1px solid var(--line); background: var(--card); color: var(--muted); padding: 9px 18px; border-radius: 99px; cursor: pointer; font-family: inherit; font-size: .92rem; font-weight: 600; }
-  .tab[aria-selected="true"] { background: linear-gradient(90deg, #c8264f, #e8588a); border-color: transparent; color: #fff; }
-  .panel { display: none; }
-  .panel.show { display: block; animation: fade .35s ease; }
-  @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
-  .panel .big { font-family: Georgia, serif; font-size: 2.2rem; color: var(--accent); }
-  .panel-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 14px; margin-top: 16px; }
-  .panel-grid div b { display: block; font-size: .74rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); }
-
-  /* cast */
-  .cast .initial { width: 54px; height: 54px; border-radius: 50%; display: grid; place-items: center; font-family: Georgia, serif; font-size: 1.5rem; font-weight: 700; color: #fff; background: linear-gradient(135deg, #c8264f, #ee6f8f); margin-bottom: 14px; box-shadow: 0 8px 20px #c8264f33; }
-  .cast .initial.alt { background: linear-gradient(135deg, #d9731f, #e9b872); }
-  .cast .initial { position: relative; overflow: hidden; }
-  .cast .initial img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .shot.wide { aspect-ratio: 21 / 9; margin-bottom: 18px; }
-  @media (max-width: 600px) { .shot.wide { aspect-ratio: 16 / 10; } }
-
-  /* themes */
-  .theme .icon { width: 42px; height: 42px; border-radius: 12px; background: var(--bg2); display: grid; place-items: center; font-size: 1.2rem; margin-bottom: 12px; }
-
-  /* take */
-  .take { background: linear-gradient(160deg, #fff, var(--bg2)); text-align: center; padding: 40px 24px; }
-  .take h3 { font-size: 1.5rem; }
-  .take p { max-width: 560px; margin: 8px auto 0; }
-
-  /* gallery */
-  .gallery { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
-  .shot { position: relative; aspect-ratio: 16 / 10; border-radius: 14px; overflow: hidden; background: linear-gradient(135deg, #ffe3ea, #ffe6cf); border: 1px solid var(--line); box-shadow: var(--shadow); cursor: zoom-in; }
-  .shot img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .4s ease; }
-  .shot:hover img { transform: scale(1.06); }
-  .shot figcaption { position: absolute; inset: 0; display: none; place-items: center; text-align: center; padding: 12px; font-size: .8rem; color: var(--accent); font-family: ui-monospace, Menlo, Consolas, monospace; }
-  .shot.missing { border-style: dashed; border-color: #f4a3b8; cursor: default; }
-  .shot.missing img { display: none; }
-  .shot.missing figcaption { display: grid; }
-  dialog#lb { border: 0; background: transparent; max-width: 94vw; max-height: 94vh; margin: auto; }
-  dialog#lb::backdrop { background: #2a121cd9; }
-  dialog#lb img { max-width: 94vw; max-height: 90vh; border-radius: 12px; display: block; }
-
-  footer { margin-top: 64px; padding: 30px 0 46px; text-align: center; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); }
-  footer p + p { margin-top: 6px; }
-
-  .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .6s ease, transform .6s ease; }
-  .js .reveal.in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    .js .reveal { opacity: 1; transform: none; transition: none; }
-    .btn:hover, .pstep:hover { transform: none; }
-    .panel.show { animation: none; }
-  }
-  @media (max-width: 800px) {
-    .hero { padding: 56px 0 30px; }
-    .premise { grid-template-columns: 1fr; }
-    nav .wrap { flex-direction: column; align-items: flex-start; gap: 0; padding-bottom: 8px; }
-    nav ul { width: 100%; }
-  }
 </style>
 </head>
 <body>
-<a class="skip" href="#main">Skip to content</a>
-
-<nav>
-  <div class="wrap">
-    <a class="brand" href="#top"><i></i>Masamune-kun's Revenge</a>
-    <ul id="nav-links">
-      <li><a href="#premise">Premise</a></li>
-      <li><a href="#facts">Facts</a></li>
-      <li><a href="#seasons">Seasons</a></li>
-      <li><a href="#cast">Cast</a></li>
-      <li><a href="#themes">Themes</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#watch">Watch</a></li>
-    </ul>
-  </div>
-</nav>
-
-<main id="main">
-
-<header class="hero" id="top">
-  <div class="wrap">
-    <span class="pill">Unofficial fan page · Spoiler-free</span>
-    <div class="jp" aria-hidden="true">政宗くんのリベンジ</div>
-    <h1>Masamune-kun's <span>Revenge</span></h1>
-    <p class="lead">A romantic comedy about a boy who reinvents himself for one purpose: payback. Things get complicated fast.</p>
-    <div class="cta">
-      <a class="btn primary" href="#premise">Explore the series →</a>
-    </div>
-    <div class="hero-stats">
-      <div class="hs"><b>2</b><span>seasons</span></div>
-      <div class="hs"><b>24</b><span>TV episodes</span></div>
-      <div class="hs"><b>2017–2023</b><span>anime run</span></div>
-    </div>
-  </div>
+<nav><div class="wrap"><b>My Anime</b><a class="back" id="navback" href="#/">All anime</a><div class="tabs" role="tablist" id="tabs"><button role="tab" id="t-fav" aria-selected="true">Favorites</button><button role="tab" id="t-list" aria-selected="false">Watched list</button></div></div></nav>
+<div id="home">
+<header class="hero wrap">
+  <div class="kicker">Unofficial fan page</div>
+  <h1>The anime I watched and loved.</h1>
+  <p>Romance, revenge, magic, nostalgia and a little isekai. Click any anime to open its own page with the story, characters and scenes.</p>
 </header>
-
-<!-- PREMISE -->
-<section id="premise">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="kicker">The story</div>
-      <h2>A plan years in the making.</h2>
-    </div>
-    <div class="premise">
-      <div class="reveal">
-        <p>Years ago, Masamune Makabe was a shy, chubby kid who was harshly rejected by Aki Adagaki, the girl he liked.</p>
-        <p>He never forgot it. He got fit, worked on himself and came back to town as a completely different person, with a plan to make her fall for him and then turn her down just as coldly as she once did.</p>
-        <p>But revenge is rarely simple. New people, old feelings and a few surprises keep pulling his plan off course.</p>
-        <p class="note">This page stays spoiler-free: it covers the setup only.</p>
-      </div>
-      <div class="reveal">
-        <p class="plan-title">The revenge plan, in theory</p>
-        <div class="plan">
-          <div class="pstep"><div><b>Transform</b><span>Get fit and become someone new.</span></div></div>
-          <div class="pstep"><div><b>Return</b><span>Come back to town and enroll at her school.</span></div></div>
-          <div class="pstep"><div><b>Win her heart</b><span>Get her to fall for him.</span></div></div>
-          <div class="pstep"><div><b>Reject her</b><span>Give her a taste of her own medicine.</span></div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FACTS -->
-<section id="facts">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="kicker">Quick facts</div>
-      <h2>The series at a glance.</h2>
-    </div>
-    <div class="facts reveal">
-      <div class="fact"><b>Original work</b><span>Manga by Hazuki Takeoka, art by Tiv</span></div>
-      <div class="fact"><b>Manga run</b><span>2012 – 2018, Monthly Comic Rex</span></div>
-      <div class="fact"><b>Publisher</b><span>Ichijinsha</span></div>
-      <div class="fact"><b>Anime studio</b><span>Silver Link</span></div>
-      <div class="fact"><b>Season 1 director</b><span>Mirai Minato</span></div>
-      <div class="fact"><b>Genre</b><span>Romantic comedy, drama</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- SEASONS -->
-<section id="seasons">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="kicker">Seasons</div>
-      <h2>Every season and special.</h2>
-      <p class="sub">Tap a tab to switch.</p>
-    </div>
-    <div class="reveal">
-      <div class="tabs" role="tablist" aria-label="Seasons">
-        <button class="tab" role="tab" id="t1" aria-controls="p1" aria-selected="true">Season 1 · 2017</button>
-        <button class="tab" role="tab" id="t2" aria-controls="p2" aria-selected="false">OVA · 2018</button>
-        <button class="tab" role="tab" id="t3" aria-controls="p3" aria-selected="false">Season 2 (R) · 2023</button>
-      </div>
-
-      <div class="card panel show" id="p1" role="tabpanel" aria-labelledby="t1">
-        <div class="big">Masamune-kun's Revenge</div>
-        <p>The original series that introduces the plan, the people around it and the first cracks in it.</p>
-        <div class="panel-grid">
-          <div><b>Aired</b>Jan 5 – Mar 23, 2017</div>
-          <div><b>Episodes</b>12</div>
-          <div><b>Studio</b>Silver Link</div>
-          <div><b>Director</b>Mirai Minato</div>
-        </div>
-      </div>
-
-      <div class="card panel" id="p2" role="tabpanel" aria-labelledby="t2">
-        <div class="big">OVA</div>
-        <p>A bonus episode released in 2018, bundled with a limited edition of the manga's tenth volume.</p>
-        <div class="panel-grid">
-          <div><b>Released</b>2018</div>
-          <div><b>Format</b>OVA</div>
-        </div>
-      </div>
-
-      <div class="card panel" id="p3" role="tabpanel" aria-labelledby="t3">
-        <div class="big">Masamune-kun's Revenge R</div>
-        <p>The long-awaited sequel, arriving six years after the first season.</p>
-        <div class="panel-grid">
-          <div><b>Premiered</b>Jul 3, 2023</div>
-          <div><b>Finished</b>Sep 18, 2023</div>
-          <div><b>Episodes</b>12</div>
-          <div><b>Studio</b>Silver Link</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CAST -->
-<section id="cast">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="kicker">Characters</div>
-      <h2>The people in the plan.</h2>
-      <p class="sub">The main group of friends and rivals, kept spoiler-free.</p>
-    </div>
-    <!-- Optional group picture: save it as images/group.jpg -->
-    <figure class="shot wide reveal"><img src="images/group.jpg" alt="The whole group together" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/group.jpg · the whole group together</figcaption></figure>
-
-    <div class="grid cast">
-      <div class="card reveal">
-        <div class="initial">M<img src="images/cast-masamune.jpg" alt="" onerror="this.remove()"></div>
-        <h3>Masamune Makabe</h3>
-        <p>The lead. Once teased and rejected, now determined and polished, with a revenge plan he's sure will work.</p>
-      </div>
-      <div class="card reveal">
-        <div class="initial alt">A<img src="images/cast-aki.jpg" alt="" onerror="this.remove()"></div>
-        <h3>Aki Adagaki</h3>
-        <p>The girl at the center of the plan. Admired by everyone at school, and not as simple as her reputation suggests.</p>
-      </div>
-      <div class="card reveal">
-        <div class="initial alt">Y<img src="images/cast-yoshino.jpg" alt="" onerror="this.remove()"></div>
-        <h3>Yoshino Koiwai</h3>
-        <p>Aki's loyal maid and attendant, with a lot more going on behind the scenes than it first seems.</p>
-      </div>
-      <div class="card reveal">
-        <div class="initial">N<img src="images/cast-neko.jpg" alt="" onerror="this.remove()"></div>
-        <h3>Neko Fujinomiya</h3>
-        <p>A gentle, affectionate transfer student from a wealthy family who quickly becomes a rival for Masamune's attention.</p>
-      </div>
-      <div class="card reveal">
-        <div class="initial alt">K<img src="images/cast-kojuro.jpg" alt="" onerror="this.remove()"></div>
-        <h3>Kojuro Shuri</h3>
-        <p>Masamune's best friend in class, often mistaken for a girl because of his petite, delicate looks.</p>
-      </div>
-      <div class="card reveal">
-        <div class="initial">T<img src="images/cast-tae.jpg" alt="" onerror="this.remove()"></div>
-        <h3>Tae Futaba</h3>
-        <p>The energetic class representative, and a supportive friend to the whole group.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- THEMES -->
-<section id="themes">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="kicker">Why it works</div>
-      <h2>What makes it fun.</h2>
-    </div>
-    <div class="grid">
-      <div class="card theme reveal">
-        <div class="icon">🌱</div>
-        <h3>Reinvention</h3>
-        <p>A full glow-up story: becoming a new person because of an old hurt.</p>
-      </div>
-      <div class="card theme reveal">
-        <div class="icon">⚔️</div>
-        <h3>Revenge vs. feelings</h3>
-        <p>A plan built on payback keeps running into things that aren't part of the plan.</p>
-      </div>
-      <div class="card theme reveal">
-        <div class="icon">💞</div>
-        <h3>Rivalries &amp; romance</h3>
-        <p>Plenty of competition, chaos and heart, all with a comedy edge.</p>
-      </div>
-    </div>
-
-    <div class="card take reveal" style="margin-top:22px">
-      <h3>My take</h3>
-      <p>It's my favorite anime. Come say hi on Discord if you want to talk about it: <b>akiandmasa</b></p>
-      <!-- Write your own thoughts about the series here! -->
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="kicker">Gallery</div>
-      <h2>Favorite moments.</h2>
-      <p class="sub">Tap an image to enlarge it.</p>
-    </div>
-    <!-- Put your images in a folder named "images" next to this file, named scene-1.jpg to scene-12.jpg -->
-    <div class="gallery">
-      <figure class="shot reveal"><img src="images/scene-1.jpg" alt="Scene 1" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-1.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-2.jpg" alt="Scene 2" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-2.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-3.jpg" alt="Scene 3" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-3.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-4.jpg" alt="Scene 4" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-4.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-5.jpg" alt="Scene 5" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-5.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-6.jpg" alt="Scene 6" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-6.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-7.jpg" alt="Scene 7" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-7.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-8.jpg" alt="Scene 8" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-8.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-9.jpg" alt="Scene 9" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-9.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-10.jpg" alt="Scene 10" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-10.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-11.jpg" alt="Scene 11" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-11.jpg</figcaption></figure>
-      <figure class="shot reveal"><img src="images/scene-12.jpg" alt="Scene 12" loading="lazy" onerror="this.parentNode.classList.add('missing')"><figcaption>images/scene-12.jpg</figcaption></figure>
-    </div>
-  </div>
-</section>
-
+<main class="wrap"><div id="fav" class="grid-tiles"></div><div id="watched" class="grid-tiles" hidden></div></main>
+</div>
+<main class="wrap" id="page" hidden></main>
+<footer><div class="wrap"><p>An unofficial fan page made with love. All titles, characters and images belong to their respective creators, studios and publishers.</p></div></footer>
 <dialog id="lb" aria-label="Enlarged image"><img id="lbimg" alt=""></dialog>
-
-<!-- WATCH -->
-<section id="watch">
-  <div class="wrap">
-    <div class="head reveal">
-      <div class="kicker">Watch</div>
-      <h2>Where to watch.</h2>
-      <p class="sub">The series is available to stream on Crunchyroll in some regions. Availability changes, so check what's offered where you live.</p>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="wrap">
-    <p>This is an unofficial fan page made with love. Any images shown belong to their respective owners.</p>
-    <p>Masamune-kun's Revenge is © Hazuki Takeoka / Tiv / Ichijinsha / the "Masamune-kun's Revenge" Production Committee.</p>
-  </div>
-</footer>
-
 <script>
-  document.documentElement.classList.add("js");
+/* ============ EDIT HERE ============
+ Add a new anime by copying one block below (keep the commas between blocks).
+ list:true puts it in the "Watched list" tab instead of Favorites.
+ Images: images/<slug>/cover.jpg · images/<slug>/characters/<character-name>.jpg · images/<slug>/scenes/scene-1.jpg …
+ Missing images show a placeholder with the file path to use. */
+var ANIMES=[
+{slug:"masamune",rank:"#1 · My favorite",color:"#8c8cf0",title:"Masamune-kun's Revenge",jp:"政宗くんのリベンジ",
+ tagline:"The revenge was never just about love.",
+ desc:["Years ago, Masamune Makabe was a shy, chubby kid harshly rejected by Aki Adagaki. He never forgot it. He got fit, reinvented himself and came back to town with a plan: make her fall for him, then reject her just as coldly.","But revenge is rarely simple. New people, old feelings and a few surprises keep pulling the plan off course."],
+ tags:["Romance","Comedy","Revenge","Nostalgic"],
+ facts:[["Studio","Silver Link"],["Season 1","2017 · 12 eps"],["Season 2 (R)","2023 · 12 eps"],["Source","Manga by Hazuki Takeoka"]],
+ take:"My favorite, OMG. It had me emotional, and it still does, to this day.",
+ chars:[["Aki Adagaki","The Brutal Princess"],["Masamune Makabe","The Revenge Seeker"],["Yoshino Koiwai","The Hidden Truth"],["Neko Fujinomiya","Unspoken Feelings"],["Kojuro Shuri","The Best Friend"],["Tae Futaba","The Supportive Friend"]],
+ scenes:6,quote:"“In another life, perhaps.”"},
+{slug:"married-couple",rank:"#2 · Second favorite",color:"#e8588a",title:"More Than a Married Couple, But Not Lovers",jp:"夫婦以上、恋人未満。",
+ tagline:"Married in practice, not in love. Yet.",
+ desc:["Two classmates are paired up as a “married couple” in a school program that teaches what married life is really like. They share the daily routine of a couple, even though they aren't actually together.","Sweet, funny and full of moments that sneak up on you."],
+ tags:["Romance","Comedy","School life"],
+ facts:[["Genre","Romantic comedy"],["Setting","High school"]],
+ take:"My second favorite, OMG. It had me emotional too, and I still think about it to this day.",
+ chars:[["Jiro Yuzuki","The husband"],["Akari Watanabe","The wife"]],
+ scenes:6,quote:"“More than a married couple…”"},
+{slug:"horimiya",rank:"#3 · Third favorite",color:"#f2a65a",title:"Horimiya",jp:"ホリミヤ",
+ tagline:"Everyone has a side the world never sees.",
+ desc:["Kyoko Hori is popular and polished at school, but at home she's busy and low-key. Izumi Miyamura seems like a quiet, gloomy classmate, but he hides piercings and tattoos.","When they run into each other outside school, each discovers the other's hidden side, and a warm, close bond begins."],
+ tags:["Romance","Slice of life","Wholesome"],
+ facts:[["Studio","CloverWorks"],["Aired","2021 · 13 eps"],["Genre","Romance, slice of life"]],
+ take:"Third favorite! Warm, sweet and so easy to love.",
+ chars:[["Kyoko Hori","Popular on the outside"],["Izumi Miyamura","Quiet with a hidden side"],["Yuki Yoshikawa","Classmate"],["Tooru Ishikawa","Classmate"],["Kakeru Sengoku","Classmate"],["Remi Ayasaki","Classmate"]],
+ scenes:6,quote:"“You only see part of a person until you look closer.”"},
+{slug:"gatherer",list:true,rank:"Watched",color:"#6fd0c4",title:"A Gatherer's Adventure in Isekai",jp:"素材採取家の異世界旅行記",
+ tagline:"A search skill and a whole new world.",
+ desc:["Takeru Kamishiro was an ordinary office worker until he's summoned to Madeus, a world of swords and magic. He starts his new life with enhanced strength, powerful magic and a rare “search” skill that finds valuable items.","A gentle journey about exploring, gathering and enjoying the road."],
+ tags:["Isekai","Adventure","Cozy"],
+ facts:[["Studio","Tatsunoko Production × SynergySP"],["Aired","Fall 2025 · 12 eps"],["Source","Light novel by Masuo Kinoko"]],
+ take:"A gentle adventure I love, with a great balance of exploring and relaxing.",
+ chars:[["Takeru Kamishiro","The Gatherer"],["Bee","Main cast"],["Brolite","Main cast"]],
+ scenes:6,quote:"“Every road is a new adventure.”"},
+{slug:"alya",rank:"Hit me like my top two",color:"#7fb4ff",title:"Alya Sometimes Hides Her Feelings in Russian",jp:"時々ボソッとロシア語でデレる隣のアーリャさん",
+ tagline:"She says it in Russian. He understands every word.",
+ desc:["Alya is the admired, composed student council beauty who quietly murmurs sweet things in Russian, sure that nobody next to her understands. Her seatmate Masachika has a secret of his own.","It hit different, emotionally. Right up there with my top two."],
+ tags:["Romance","Comedy","School life"],
+ facts:[["Studio","Doga Kobo"],["Aired","2024"],["Genre","Romantic comedy"]],
+ take:"It hit me emotionally, just like my first and second favorites.",
+ chars:[["Alisa “Alya” Kujo","The Student Council beauty"],["Masachika Kuze","The seatmate with a secret"],["Yuki Suou","Student council"],["Maria Kujo","Alya's family"],["Nonoa Miyamae","Classmate"],["Ayano Kimishima","Student council"]],
+ scenes:6,quote:"“Some feelings are easier said in another language.”"},
+{slug:"iceblade",rank:"Amazing",color:"#c7a0ff",title:"The Iceblade Sorcerer Shall Rule the World",jp:"冰剣の魔術師が世界を統べる",
+ tagline:"The strongest sorcerer is sitting in the back row.",
+ desc:["Ray White is a sorcerer who helped win a devastating war. Now he enrolls at an elite magic academy while hiding who he really is, posing as a commoner.","The wealthier students look down on him, but he quickly makes friends, and a conspiracy troubling the school gives him something to deal with."],
+ tags:["Fantasy","Magic","Action","Academy"],
+ facts:[["Studio","Cloud Hearts"],["Season 1","Jan–Mar 2023"],["Season 2","Announced for Oct 2026"],["Source","Light novel by Nana Mikoshiba"]],
+ take:"Amazing!!!! One of my favorites, and I highly recommend it.",
+ chars:[["Ray White","The hidden war hero"],["Amelia Rose","Main cast"],["Elisa Griffith","Main cast"],["Rebecca Bradley","Main cast"]],
+ scenes:6,quote:"“Strength doesn't need to announce itself.”"}
+];
 
-  // reveal on scroll
-  var items = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.12 });
-    items.forEach(function (el) { io.observe(el); });
-  } else {
-    items.forEach(function (el) { el.classList.add("in"); });
-  }
-
-  // active nav link
-  var links = document.querySelectorAll("#nav-links a");
-  var map = {};
-  links.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
-  if ("IntersectionObserver" in window) {
-    var so = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          links.forEach(function (a) { a.classList.remove("active"); });
-          var l = map[e.target.id]; if (l) l.classList.add("active");
-        }
-      });
-    }, { rootMargin: "-45% 0px -50% 0px" });
-    Object.keys(map).forEach(function (id) {
-      var s = document.getElementById(id); if (s) so.observe(s);
-    });
-  }
-
-  // gallery lightbox
-  var lb = document.getElementById("lb");
-  var lbimg = document.getElementById("lbimg");
-  document.querySelectorAll(".shot").forEach(function (fig) {
-    fig.addEventListener("click", function () {
-      if (fig.classList.contains("missing") || !lb.showModal) return;
-      var img = fig.querySelector("img");
-      lbimg.src = img.src; lbimg.alt = img.alt;
-      lb.showModal();
-    });
-  });
-  lb.addEventListener("click", function () { lb.close(); });
-
-  // season tabs
-  var tabs = document.querySelectorAll(".tab");
-  tabs.forEach(function (tab) {
-    tab.addEventListener("click", function () {
-      tabs.forEach(function (t) {
-        t.setAttribute("aria-selected", "false");
-        document.getElementById(t.getAttribute("aria-controls")).classList.remove("show");
-      });
-      tab.setAttribute("aria-selected", "true");
-      document.getElementById(tab.getAttribute("aria-controls")).classList.add("show");
-    });
-  });
+var $=function(s){return document.querySelector(s)};
+function slug(t){return t.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')}
+function esc(t){var d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function ph(path,alt,cls){return '<div class="ph '+(cls||'')+'" data-path="'+path+'"><img src="'+path+'" alt="'+esc(alt)+'" loading="lazy" onerror="this.parentNode.classList.add(\'missing\')"></div>'}
+function body(a){var p='images/'+a.slug+'/';
+ return '<div class="banner"><img src="'+p+'cover.jpg" alt="" onerror="this.remove()"><div class="ov"><div class="rk">'+esc(a.rank)+'</div><h1>'+esc(a.title)+'</h1><div class="jp">'+esc(a.jp)+' · '+esc(a.tagline)+'</div></div></div>'
+ +'<div class="cols"><div class="box"><h3>The story</h3>'+a.desc.map(function(d){return '<p>'+esc(d)+'</p>'}).join('')
+ +'<div class="tags">'+a.tags.map(function(t){return '<span>'+esc(t)+'</span>'}).join('')+'</div>'
+ +'<div class="take"><b>My take</b>'+esc(a.take)+'</div></div>'
+ +'<div class="box"><h3>Quick facts</h3><dl>'+a.facts.map(function(f){return '<dt>'+esc(f[0])+'</dt><dd>'+esc(f[1])+'</dd>'}).join('')+'</dl></div></div>'
+ +'<h3 class="sub">Characters</h3><div class="chars">'+a.chars.map(function(c){return '<div class="ch">'+ph(p+'characters/'+slug(c[0])+'.jpg',c[0])+'<div class="t"><b>'+esc(c[0])+'</b><small>'+esc(c[1])+'</small></div></div>'}).join('')+'</div>'
+ +'<h3 class="sub">Favorite scenes</h3><div class="shots">'+Array.apply(null,Array(a.scenes)).map(function(_,k){return ph(p+'scenes/scene-'+(k+1)+'.jpg',a.title+' scene '+(k+1))}).join('')+'</div>'
+ +'<p class="quote">'+esc(a.quote)+'</p>'}
+function tile(a){
+  return '<a class="tile" style="--c:'+a.color+'" href="#/'+encodeURIComponent(a.slug)+'">'
+   +'<div class="cv"><img src="images/'+a.slug+'/cover.jpg" alt="" loading="lazy" onerror="this.remove()"></div>'
+   +'<div class="tb"><div class="rk">'+esc(a.rank)+'</div><h3>'+esc(a.title)+'</h3><p>'+esc(a.tagline)+'</p><span class="go">Open page →</span></div></a>';
+}
+$('#fav').innerHTML=ANIMES.filter(function(a){return !a.list}).map(tile).join('');
+$('#watched').innerHTML=ANIMES.filter(function(a){return a.list}).map(tile).join('');
+function tab(w){var f=w==='fav';$('#fav').hidden=!f;$('#watched').hidden=f;
+  $('#t-fav').setAttribute('aria-selected',f);$('#t-list').setAttribute('aria-selected',!f)}
+$('#t-fav').onclick=function(){tab('fav')};$('#t-list').onclick=function(){tab('list')};
+function route(){
+  var m=location.hash.match(/^#\/(.+)$/),id=m?decodeURIComponent(m[1]):null;
+  var i=ANIMES.findIndex(function(a){return a.slug===id});
+  var home=!id||i<0&&false;
+  if(!id){$('#home').hidden=false;$('#page').hidden=true;$('#tabs').hidden=false;$('#navback').hidden=true;document.title='My Anime | Fan Page';window.scrollTo(0,0);return}
+  $('#home').hidden=true;$('#page').hidden=false;$('#tabs').hidden=true;$('#navback').hidden=false;
+  if(i<0){document.title='Not found | My Anime';$('#page').innerHTML='<div class="missingmsg"><h1>Anime not found</h1><p><a href="#/">Back to all anime</a></p></div>';return}
+  var a=ANIMES[i],pv=ANIMES[(i-1+ANIMES.length)%ANIMES.length],nx=ANIMES[(i+1)%ANIMES.length];
+  document.title=a.title+' | My Anime';
+  $('#page').innerHTML='<section class="show" style="--c:'+a.color+';border-top:0;padding-top:30px">'+body(a)+'</section>'
+   +'<div class="pager"><a href="#/'+encodeURIComponent(pv.slug)+'">← '+esc(pv.title)+'</a><a href="#/'+encodeURIComponent(nx.slug)+'">'+esc(nx.title)+' →</a></div>';
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',route);route();
+var lb=$('#lb');
+document.addEventListener('click',function(e){var im=e.target.closest('.ph:not(.missing) img');if(im){$('#lbimg').src=im.src;lb.showModal()}else if(e.target===lb||e.target.id==='lbimg')lb.close()});
 </script>
 </body>
 </html>
